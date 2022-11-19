@@ -12,7 +12,23 @@ public class bilPrima {
             System.out.println( bil + "bukan bilangan prima");
         }
     }
+
+    public static void tampilPrima(int jum){
+        
+        for(int i = 1; i <= jum; i++){
+            int a = 0;
+            for(int j = 1;j <= i; j++){
+                if(i % j == 0){
+                    a++;
+                }
+            }
+            if(a == 2){
+                System.out.println(i);
+            }
+        }
+    }
     public static void main(String[] args) throws Exception {
         cekBilPrima(5);
+        tampilPrima(10);
     }
 }
