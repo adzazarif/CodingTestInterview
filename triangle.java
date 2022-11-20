@@ -14,7 +14,25 @@ public class triangle {
             System.out.println();
         }
     }
+    // membuat triangle seperti berikut 
+    //         *
+    //        * *
+    //       * * *
+    //      * * * *
+    //     * * * * *
+    public static void triangle2(){
+        for (int i = 1; i <= banyak; i++) {
+            for (int j = banyak - 1; j >= i; j--) {
+                System.out.print(" ");
+            }
+            for (int k = 1; k <= i; k++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
     public static void main(String[] args) {
-        triangle1();
+        // triangle1();
+        triangle2();
     }
 }
