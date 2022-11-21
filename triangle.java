@@ -29,12 +29,29 @@ public class triangle {
         }
     }
     // membuat triangle seperti berikut 
+    //     *
+    //    **
+    //   ***
+    //  ****
+    // ***** 
+    public static void triangle3(){
+        for (int i = 1; i <= banyak; i++) {
+            for (int j = banyak - 1; j >= i; j--) {
+                System.out.print(" ");
+            }
+            for (int k = 1; k <= i; k++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+    // membuat triangle seperti berikut 
     //         *
     //        * *
     //       * * *
     //      * * * *
     //     * * * * *
-    public static void triangle3(){
+    public static void triangle4(){
         for (int i = 1; i <= banyak; i++) {
             for (int j = banyak - 1; j >= i; j--) {
                 System.out.print(" ");
@@ -46,8 +63,9 @@ public class triangle {
         }
     }
     public static void main(String[] args) {
-        // triangle1();
+        triangle1();
         triangle2();
-        // triangle3();
+        triangle3();
+        triangle4();
     }
 }
