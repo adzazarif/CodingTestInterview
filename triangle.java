@@ -45,13 +45,30 @@ public class triangle {
             System.out.println();
         }
     }
+    // memebuat triangle sepert berikut
+    // *****
+    //  ****
+    //   ***
+    //    **
+    //     *
+    public static void triangle4(){
+        for (int i = 1; i <= banyak; i++) {
+            for (int j = 2 ; j <= i; j++) {
+                System.out.print(" ");
+            }
+            for (int k = banyak; k >= i; k--){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
     // membuat triangle seperti berikut 
     //         *
     //        * *
     //       * * *
     //      * * * *
     //     * * * * *
-    public static void triangle4(){
+    public static void triangle5(){
         for (int i = 1; i <= banyak; i++) {
             for (int j = banyak - 1; j >= i; j--) {
                 System.out.print(" ");
@@ -64,8 +81,11 @@ public class triangle {
     }
     public static void main(String[] args) {
         triangle1();
+        System.out.println();
         triangle2();
+        System.out.println();
         triangle3();
+        System.out.println();
         triangle4();
     }
 }
