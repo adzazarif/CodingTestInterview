@@ -79,6 +79,25 @@ public class triangle {
             System.out.println();
         }
     }
+    // membuat triangle seperti berikut
+    // * * * * *
+    //  * * * *
+    //   * * *
+    //    * *
+    //     *
+    public static void triangle6(){
+        for (int i = banyak; i >= 1; i--) {
+            for (int j = 1 ; j <= banyak - i; j++) {
+                System.out.print(" ");
+            }
+            for (int k = 1 ; k <= i; k++) {
+                System.out.print("* ");
+            }
+            
+            
+            System.out.println();
+        }
+    }
     public static void main(String[] args) {
         triangle1();
         System.out.println();
@@ -87,5 +106,9 @@ public class triangle {
         triangle3();
         System.out.println();
         triangle4();
+        System.out.println();
+        triangle5();
+        System.out.println();       
+        triangle6();
     }
 }
